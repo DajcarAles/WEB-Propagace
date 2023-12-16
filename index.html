@@ -13,7 +13,7 @@
         }
         .project {
             border: 1px solid #ddd;
-            margin: 40px;
+            margin: 20px;
             padding: 10px;
         }
         #about-me p, #contact p {
@@ -34,6 +34,7 @@
             height: 60px;
             background-color: #ddd;
             text-align: center;
+            cursor: pointer;
             border-radius: 25%;
             line-height: 60px;
             font-size: 1.2em;
@@ -43,7 +44,7 @@
             position: fixed;
             right: 20px;
             top: 90px;
-            background-color: #bbbbbbfa;
+            background-color: #bbb;
             padding: 10px;
             font-size: 1.5em;
             border-radius: 10px;
@@ -51,27 +52,28 @@
         .intro-text {
             font-size: 5em;
             width: 50%;
-            border-bottom: 4px solid black;
+            border-bottom: 2px solid black;
         }
         .project-image {
             width: 50%;
         }
         .project-description {
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
             display: none;
-            font-size: 1em;
-            width: 75%;
             margin-top: 5px;
+            
         }
         .project:hover .project-description {
             display: block;
+            opacity: 1;
         }
         .social-links {
             display: flex;
-            font-size: 1.5em;
             justify-content: space-between;
         }
         #contact {
-            margin-bottom: 60px;
+            margin-bottom: 30px;
         }
     </style>
     <script>
@@ -95,7 +97,7 @@
         </div>
     </div>
     <div class="container">
-        <p class="intro-text">Jsem jenom obyčejný kluk, který má sny.....</p>
+        <p class="intro-text">Jsem jenom obyčejný kluk, který má sny.</p>
         <section id="about-me">
             <h2>O mně</h2>
             <p>Moje jméno je Aleš Dajčar a jsem student na střední průmyslové škole v Třebíči. Je mi 19 let. Mezi mé koníčky patří hraní počítačových her, programování a stříhání videí.</p>
@@ -110,10 +112,10 @@
                 <p class="project-description">Jedná se o můj první vetší projekt, který jsme tvořili ve tříčleném týmu. Projekt je hra na jednom počítači, je na principu hry lodě.</p>
             </div>
             <div class="project">
-                <h3>Název projektu 2</h3>
-                <img class="project-image" src="cesta_k_obrazku2.jpg">
+                <h3>Vědomostní hra</h3>
+                <img class="project-image" src="Projekt2.jpg">
                 <p >Popisek projektu</p>
-                <p class="project-description">Popis projektu 2.</p>
+                <p class="project-description">Jedná se o můj ročníkový projekt, na téma vjedomostní hry o matematice a fyzice.</p>
             </div>
         </section>
         <section id="contact">
